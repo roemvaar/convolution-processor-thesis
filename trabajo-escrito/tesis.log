@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.3)  13 MAR 2019 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.3)  1 APR 2019 19:29
 entering extended mode
 **./tesis.tex
 (tesis.tex
@@ -573,12 +573,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
  []
 
 
-Overfull \hbox (0.41693pt too wide) in paragraph at lines 21--23
-[]\OT1/phv/m/n/10.95 *ARREGLAR* Desa-rro-llar la ar-qui-tec-tu-ra en FP-GA, com
--pac-to y de ba-jo con-su-mo de energ[]a,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
@@ -588,12 +582,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[2]) (marco.tex [3]
+) (marco.tex [3]
 Cap\'{\i }tulo II.
 
 LaTeX Warning: Citation `ARQHYS-2012' on page 4 undefined on input line 5.
@@ -732,17 +726,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 [12
 
 ]
-<./figs/diagramadeflujo.png, id=211, 205.4877pt x 396.5214pt>
-File: ./figs/diagramadeflujo.png Graphic file (type png)
-<use ./figs/diagramadeflujo.png>
-Package pdftex.def Info: ./figs/diagramadeflujo.png  used on input line 17.
-(pdftex.def)             Requested size: 172.99727pt x 343.35536pt.
- [13 <./figs/diagramadeflujo.png>]) (desarrollo.tex [14]
+<./figs/procedimiento.jpeg, id=211, 406.51875pt x 496.85625pt>
+File: ./figs/procedimiento.jpeg Graphic file (type jpg)
+<use ./figs/procedimiento.jpeg>
+Package pdftex.def Info: ./figs/procedimiento.jpeg  used on input line 17.
+(pdftex.def)             Requested size: 266.15697pt x 374.55936pt.
+ [13 <./figs/procedimiento.jpeg>]) (desarrollo.tex [14]
 Cap\'{\i }tulo IV.
 [15
 
 ]
-<./figs/diagramaprogramacion.png, id=226, 208.8603pt x 501.7947pt>
+<./figs/diagramaprogramacion.png, id=225, 208.8603pt x 501.7947pt>
 File: ./figs/diagramaprogramacion.png Graphic file (type png)
 <use ./figs/diagramaprogramacion.png>
 Package pdftex.def Info: ./figs/diagramaprogramacion.png  used on input line 10
@@ -768,7 +762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 [18
 
 ]
-<./figs/matlabescritorio.png, id=243, 1028.34187pt x 547.2947pt>
+<./figs/matlabescritorio.png, id=242, 1028.34187pt x 547.2947pt>
 File: ./figs/matlabescritorio.png Graphic file (type png)
 <use ./figs/matlabescritorio.png>
 Package pdftex.def Info: ./figs/matlabescritorio.png  used on input line 16.
@@ -828,7 +822,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
  8566 strings out of 492973
- 121760 string characters out of 3135933
+ 121754 string characters out of 3135933
  233906 words of memory out of 3000000
  12194 multiletter control sequences out of 15000+200000
  23927 words of font info for 50 fonts, out of 3000000 for 9000
@@ -843,9 +837,9 @@ c/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on tesis.pdf (31 pages, 470573 bytes).
+Output written on tesis.pdf (31 pages, 488751 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
+ 313 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
