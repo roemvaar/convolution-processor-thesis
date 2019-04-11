@@ -1,0 +1,40 @@
+\renewcommand\thechapter{\Roman{chapter}}
+\chapter{INTRODUCCIÓN} \label{ch:intro} \thispagestyle{fancy} \pagenumbering{arabic}
+\renewcommand\thechapter{\arabic{chapter}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% trabajo cuenta con un diseño y desarrollo un laboratorio virtual el cual maneja un brazo robótico con el fin de que el usuario pueda interactuar y reforzar los conceptos básicos que se ven en el curso de robótica de nivel licenciatura. Es una herramienta la cual se enfoca en la ''enseñanza para la comprensión'', hoy en día los simuladores se vuelven mejor con las tecnologías que nos rodean, se pueden crear software el cual maneje mejor ciertos parámetros para asemejarse mas a la realidad que nos rodea y no necesitar de equipos caros, se busca igualar la manera de trabajar aunque no se tenga físicamente, pero que se sienta que la interacción es la misma.
+
+%---------------------------------------------------------------------------------------
+\section{Antecedentes}
+*ARREGLAR* 
+Un coprocesador es... \\
+
+La convolución define en forma matemática como se combinan dos señales para formar una tercera señal. Es la técnica más importante en el procesamiento digital de señales, donde los sistemas se describen mediante una señal llamada respuesta al impulso. La convolución es importante debido a que relaciona las tres señales de interés: la señal de entrada, la señal de salida y la respuesta al impulso, y en un sistema lineal si se conoce su respuesta al impulso, se conoce el comportamiento del mismo ante cualquier señal de entrada. \\
+
+*ARREGLAR* Este tipo de cómputo es intensivo, es decir requiere que se realicen demasiadas operaciones matemáticas. En la actualidad, se utiliza la computación acelerada por medio del uso de GPU, que es el uso de GPU (graphics processing unit) junto a un CPU (central processing unit) para acelerar las aplicaciones de aprendizaje profundo [5].\\ 
+
+\section{Planteamiento del problema}
+*ARREGLAR* 
+A medida de que la capacidad de los sistemas electrónicos de recopilar datos aumenta, la necesidad para procesar los mismos también aumenta. Los GPUs son circuitos electrónicos especializados que ayudan al cómputo intensivo, pero trabajan a nivel de software, lo cual no los hace la opción más rápida en cuestión de procesamiento de datos, además de consumir mucha potencia, lo cual resulta como una desventaja para sistemas que utilizan baterías. Existe la necesidad de encontrar alternativas a las tendencias actuales para el procesamiento de señales con mejores prestaciones de cómputo intensivo y con menor consumo de potencia.\\
+
+\section{Objetivos}
+*ARREGLAR* 
+Desarrollar un coprecosador para la operación de la convolución. Describir una arquitectura compacta y bajo consumo de energía con el lenguaje de descripción de hardware Verilog e imlementar en un FPGA, que pueda usarse como acelerador en hardware en sistemas que hagan uso intensivo de dicha operación.\\
+
+\section{Hipótesis}
+La arquitectura digital para la convolución implementada en el FPGA tendrá un desempeño mejor o comparable en términos de tiempos de procesamiento que un acelerador con GPU. \\
+
+
+\section{Justificación}
+A pesar de que en la actualidad existen opciones de dispositivos para acelerar el procesamiento de datos, como el GPU, este no está pensado para bajos consumos de potencia y al ser de propósito general, no está optimizado para sistemas que requieran movilidad. Por lo tanto, con una  arquitectura en FPGA se logrará hacer un (co)procesador dedicado para esta función que disminuya los tiempos de procesamiento en el caso de procesar grandes volúmenes de datos. Si no se realiza esta arquitectura se estaría desaprovechando una oportunidad de analizar los datos con los que se cuentan hoy en día de manera más eficiente, además de que se estaría gastando mayor cantidad de potencia que se traduce en un gasto económico.\\
+
+\section{Delimitaciones}
+El diseño del procesador se limitará a implementar la arquitectura para un (co) procesador para la convolución. Se implementará en el FPGA y verificará a través de un entorno de simulación con la ayuda de Matlab.  
+
+\section{Limitaciones}
+\begin{itemize}
+\item Tiempo disponible
+\item Dinero
+\item Recursos
+\item Licencias 
+\end{itemize}
