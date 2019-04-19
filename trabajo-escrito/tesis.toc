@@ -11,7 +11,7 @@
 \contentsline {chapter}{\numberline {III}M\IeC {\'E}TODO}{12}{chapter.3}
 \contentsline {section}{\numberline {3.1}Sujeto}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Procedimiento}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Materiales}{14}{section.3.3}
+\contentsline {section}{\numberline {3.3}Materiales y Herramientas}{14}{section.3.3}
 \contentsline {chapter}{\numberline {IV}DESARROLLO}{15}{chapter.4}
 \contentsline {chapter}{\numberline {V}RESULTADOS}{18}{chapter.5}
 \contentsline {chapter}{\numberline {VI}CONCLUSIONES}{20}{chapter.6}

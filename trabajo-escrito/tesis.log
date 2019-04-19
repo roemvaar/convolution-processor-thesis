@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.3)  1 APR 2019 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.3)  18 APR 2019 13:20
 entering extended mode
 **./tesis.tex
 (tesis.tex
@@ -473,10 +473,10 @@ LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
  (portada.tex
 Package epstopdf Info: Source file: <./figs/logoclr.eps>
-(epstopdf)                    date: 2018-06-28 13:18:08
+(epstopdf)                    date: 2019-04-18 13:13:43
 (epstopdf)                    size: 780527 bytes
 (epstopdf)             Output file: <./figs/logoclr-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-03 03:46:57
+(epstopdf)                    date: 2019-04-18 13:13:43
 (epstopdf)                    size: 63767 bytes
 (epstopdf)             Command: <epstopdf --outfile=./figs/logoclr-eps-converte
 d-to.pdf ./figs/logoclr.eps>
@@ -585,6 +585,168 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 [2]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \item T
+            iempo disponible
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \item T
+            iempo disponible
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \item T
+            iempo disponible
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \item D
+            inero
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \item D
+            inero
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \item D
+            inero
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \item R
+            ecursos
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \item R
+            ecursos
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \item R
+            ecursos
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \item L
+            icencias
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \item L
+            icencias
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \item L
+            icencias
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \end{itemize}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (18.48523pt too wide) in paragraph at lines 36--41
+[]\OT1/phv/m/n/10.95 Las prin-ci-pa-les li-mi-ta-cio-nes del pro-yec-to son:Tie
+mpo dis-po-ni-ble []Dinero []Recursos []Licencias 
  []
 
 ) (marco.tex [3]
@@ -729,7 +891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 <./figs/procedimiento.jpeg, id=211, 406.51875pt x 496.85625pt>
 File: ./figs/procedimiento.jpeg Graphic file (type jpg)
 <use ./figs/procedimiento.jpeg>
-Package pdftex.def Info: ./figs/procedimiento.jpeg  used on input line 17.
+Package pdftex.def Info: ./figs/procedimiento.jpeg  used on input line 16.
 (pdftex.def)             Requested size: 266.15697pt x 374.55936pt.
  [13 <./figs/procedimiento.jpeg>]) (desarrollo.tex [14]
 Cap\'{\i }tulo IV.
@@ -786,10 +948,10 @@ No file tesis.bbl.
 (quanser.tex [21]
 Ap\'{e}ndice A.
 Package epstopdf Info: Source file: <./figs/logoclr.eps>
-(epstopdf)                    date: 2018-06-28 13:18:08
+(epstopdf)                    date: 2019-04-18 13:13:43
 (epstopdf)                    size: 780527 bytes
 (epstopdf)             Output file: <./figs/logoclr-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-03 03:46:57
+(epstopdf)                    date: 2019-04-18 13:13:43
 (epstopdf)                    size: 63767 bytes
 (epstopdf)             Command: <epstopdf --outfile=./figs/logoclr-eps-converte
 d-to.pdf ./figs/logoclr.eps>
@@ -812,9 +974,15 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
-Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0C61E2820AE9A455FF2D7C909AF6A8FA;1001.
 
+
+Package rerunfilecheck Warning: File `tesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tesis.out':
+(rerunfilecheck)             Before: 0C61E2820AE9A455FF2D7C909AF6A8FA;1001
+(rerunfilecheck)             After:  6F0A6B3C95E40A0DC09B8C9A8DCAB523;1016.
 
 LaTeX Warning: There were undefined references.
 
@@ -837,7 +1005,7 @@ c/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on tesis.pdf (31 pages, 488751 bytes).
+Output written on tesis.pdf (31 pages, 488656 bytes).
 PDF statistics:
  313 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
