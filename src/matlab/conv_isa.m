@@ -1,16 +1,15 @@
 function y = conv_isa(x,h)
     % conv_isa -> convolution operation (input side algorithm)
-    % "x" is the input signal 
-    % "h" is the impulse response
-    % "y" is the output signal 
     
-    SIZE_X = numel(x);    % number of elements of x 
-    SIZE_H = numel(h);    % number of elements of h
+    N1 = length(x);  
+    N2 = length(h); 
+    L = N1 + N2 - 1;
     
-    y = zeros(1, SIZE_X + SIZE_H - 1);    % zero the output array
+    y = zeros(1, L);    % zero the output array
     
-    for i = 1:SIZE_X      % loops through the input signal 
-        for j = 1:SIZE_H
+    % loops through the input signal
+    for i = 1:N1       
+        for j = 1:N2
             y(i + j - 1) = y(i + j - 1) + x(i) * h(j);
         end
     end    
