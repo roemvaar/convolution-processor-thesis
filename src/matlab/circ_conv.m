@@ -50,5 +50,4 @@ function y = circ_conv()
     xlabel('Discrete Time');
     ylabel('Amplitude');
     
-    
 end
