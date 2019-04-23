@@ -1,19 +1,17 @@
-function y = conv_frec(x,h)
+function y = conv_frec()
     % conv_frec -> convolution operation (in frequency domain)
     % "x" is the input signal 
     % "h" is the impulse response (conv kernel)
     % "y" is the output signal 
     
-    SIZE_X = numel(x);
-    SIZE_H = numel(h);
-    SIZE_Y = SIZE_X + SIZE_H - 1;
+    x = [1, 2, 3, 4];
+    h = [1, 2];
+    N = numel(x) + numel(h) - 1;
     
-    new_x = fft(x);
-    new_h = fft(h);
+    X = fft(x, N);
+    H = fft(h, N);
     
-    
-    y = SIZE_Y;
-    
+    y = real(X .* N);
     
     
 end
