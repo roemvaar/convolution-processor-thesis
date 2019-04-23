@@ -1,17 +1,13 @@
-function y = conv_frec()
-    % conv_frec -> convolution operation (in frequency domain)
-    % "x" is the input signal 
-    % "h" is the impulse response (conv kernel)
-    % "y" is the output signal 
+function y = conv_frec(x, h)
+    % conv_frec -> convolution operation using fft (in frequency domain)
+
+    N1 = length(x);
+    N2 = length(h);
+    L = N1 + N2 - 1;
     
-    x = [1, 2, 3, 4];
-    h = [1, 2];
-    N = numel(x) + numel(h) - 1;
+    X = fft(x, L);
+    H = fft(h, L);
     
-    X = fft(x, N);
-    H = fft(h, N);
-    
-    y = real(X .* N);
-    
+    y = ifft(X.*H);  
     
 end
