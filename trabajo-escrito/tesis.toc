@@ -19,13 +19,13 @@
 \contentsline {subsubsection}{Desarrollo de arquitectura con Verilog}{15}{subsection.3.2.4}
 \contentsline {subsubsection}{Pruebas - validaci\IeC {\'o}n funcional}{15}{subsection.3.2.4}
 \contentsline {subsubsection}{S\IeC {\'\i }ntesis}{15}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Implementaci\IeC {\'o}n a nivel de hardware}{16}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Implementaci\IeC {\'o}n a nivel de hardware}{15}{subsection.3.2.5}
 \contentsline {subsubsection}{Implementaci\IeC {\'o}n en FPGA}{16}{subsection.3.2.5}
 \contentsline {subsubsection}{Pruebas}{16}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Documentaci\IeC {\'o}n}{16}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Materiales y Herramientas}{17}{section.3.3}
-\contentsline {chapter}{\numberline {IV}DESARROLLO}{19}{chapter.4}
-\contentsline {chapter}{\numberline {V}RESULTADOS}{22}{chapter.5}
-\contentsline {chapter}{\numberline {VI}CONCLUSIONES}{24}{chapter.6}
-\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{25}{chapter.6}
-\contentsline {chapter}{\numberline {A}Quanser IP02}{26}{appendix.Alph1}
+\contentsline {section}{\numberline {3.3}Materiales y Herramientas}{16}{section.3.3}
+\contentsline {chapter}{\numberline {IV}DESARROLLO}{18}{chapter.4}
+\contentsline {chapter}{\numberline {V}RESULTADOS}{21}{chapter.5}
+\contentsline {chapter}{\numberline {VI}CONCLUSIONES}{23}{chapter.6}
+\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{24}{chapter.6}
+\contentsline {chapter}{\numberline {A}Quanser IP02}{25}{appendix.Alph1}
