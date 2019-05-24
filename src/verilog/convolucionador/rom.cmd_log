@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/rom.xst" -ofn "/home/ise/ise_projects/convolucionador/rom.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/rom.xst" -ofn "/home/ise/ise_projects/convolucionador/rom.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/rom.xst" -ofn "/home/ise/ise_projects/convolucionador/rom.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4l-tqg144-1L rom.ngc rom.ngd  
+map -intstyle ise -p xc6slx4l-tqg144-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rom_map.ncd rom.ngd rom.pcf 

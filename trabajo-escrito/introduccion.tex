@@ -9,6 +9,7 @@
 *ARREGLAR* 
 Un coprocesador es... \\
 
+
 La convolución define en forma matemática como se combinan dos señales para formar una tercera señal. Es la técnica más importante en el procesamiento digital de señales, donde los sistemas se describen mediante una señal llamada respuesta al impulso. La convolución es importante debido a que relaciona las tres señales de interés: la señal de entrada, la señal de salida y la respuesta al impulso, y en un sistema lineal si se conoce su respuesta al impulso, se conoce el comportamiento del mismo ante cualquier señal de entrada. \\
 
 *ARREGLAR* Este tipo de cómputo es intensivo, es decir requiere que se realicen demasiadas operaciones matemáticas. En la actualidad, se utiliza la computación acelerada por medio del uso de GPU, que es el uso de GPU (graphics processing unit) junto a un CPU (central processing unit) para acelerar las aplicaciones de aprendizaje profundo [5].\\ 
@@ -26,14 +27,16 @@ La arquitectura digital para la convolución implementada en el FPGA tendrá un 
 
 
 \section{Justificación}
-A pesar de que en la actualidad existen opciones de dispositivos para acelerar el procesamiento de datos, como el GPU, este no está pensado para bajos consumos de potencia y al ser de propósito general, no está optimizado para sistemas que requieran movilidad. Por lo tanto, con una  arquitectura en FPGA se logrará hacer un (co)procesador dedicado para esta función que disminuya los tiempos de procesamiento en el caso de procesar grandes volúmenes de datos. Si no se realiza esta arquitectura se estaría desaprovechando una oportunidad de analizar los datos con los que se cuentan hoy en día de manera más eficiente, además de que se estaría gastando mayor cantidad de potencia que se traduce en un gasto económico.\\
+En la actualidad existen diversos dispositivos para acelerar el procesamiento de datos. El dispositivo más popular para esta tarea es el GPU, el cual brinda grandes características en cuanto a velocidad de procesamiento, pero tiene un gran problema. Esta arquitectura consume mucha potencia y además al ser de propósito general, no está optimizada para sistemas que requieran movilidad. Por esto, una arquitectura implementada en un FPGA brinda la oportunidad de procesador datos con una velocidad de procesamiento comparable o mejor que en los GPUs, al mismo tiempo que se disminuye tanto el consumo de potencia, lo cual se traduce como un ahorro económico y además con un menor espacio físico permitiendo ser utilizado en dispositivos móviles.
+
 
 \section{Delimitaciones}
-El diseño del procesador se limitará a implementar la arquitectura para un (co) procesador para la convolución. Se implementará en el FPGA y verificará a través de un entorno de simulación con la ayuda de Matlab.  
+Este trabajo se limitará al diseño de un coprocesador para la operación de la convolución discreta. La arquitectura se implementará en un FPGA y se verificara a través de un entorno de simulación con la ayuda de MATLAB.
+
 
 \section{Limitaciones}
-\begin{itemize}
 Las principales limitaciones del proyecto son: 
+\begin{itemize}
 \item Tiempo disponible
 \item Dinero
 \item Recursos

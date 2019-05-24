@@ -1,0 +1,9 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/ise/ise_projects/convolucionador/tb_rom_isim_beh.exe -prj /home/ise/ise_projects/convolucionador/tb_rom_beh.prj work.tb_rom work.glbl 
+ISim P.20160913 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/ise_projects/convolucionador/rom.v" into library work
+ERROR:HDLCompiler:1335 - "/home/ise/ise_projects/convolucionador/rom.v" Line 11: Port mem must not be declared to be an array
+ERROR:HDLCompiler:598 - "/home/ise/ise_projects/convolucionador/rom.v" Line 5: Module <rom> ignored due to previous errors.
+Verilog file /home/ise/ise_projects/convolucionador/rom.v ignored due to errors

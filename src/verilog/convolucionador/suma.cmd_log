@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/suma.xst" -ofn "/home/ise/ise_projects/convolucionador/suma.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/suma.xst" -ofn "/home/ise/ise_projects/convolucionador/suma.syr" 

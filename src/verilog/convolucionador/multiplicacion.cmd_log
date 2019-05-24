@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/multiplicacion.xst" -ofn "/home/ise/ise_projects/convolucionador/multiplicacion.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/multiplicacion.xst" -ofn "/home/ise/ise_projects/convolucionador/multiplicacion.syr" 

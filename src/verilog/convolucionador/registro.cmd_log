@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/ise_projects/convolucionador/registro.xst" -ofn "/home/ise/ise_projects/convolucionador/registro.syr" 
