@@ -4,16 +4,20 @@
 
 #define SIZE(A) (sizeof(A)/sizeof(A[0]))
 
-
 void convolution(char *img_ptr, char *kernel);
 void convolution_2d(char *img_ptr, char *kernel);
 void print_array(int *array, int size);
+
 
 int main(void)
 {
     printf("Convolution");
     char *img_8x8[8][8];   // 8x8 Image - Grayscale
     int array[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    convolution(array, array);
+    convolution_2d(array, array);
+    print_array(array, SIZE(a));
 
     return 0;
 }
