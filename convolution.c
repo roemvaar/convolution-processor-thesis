@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+#define SIZE_OF_ARRAY
+
 
 void convolution(char *img_ptr, char *kernel);
 void convolution_2d(char *img_ptr, char *kernel);
@@ -26,4 +28,15 @@ void convolution(char *img_ptr, char *kernel)
 void convolution_2d(char *img_ptr, char *kernel)
 {
     printf("2D Convolution");
+}
+
+
+void print_array(int *array, int size)
+{
+    int i;
+
+    for(i = 0; i < size; i++)
+    {
+        printf("%d", 
+    }
 }
