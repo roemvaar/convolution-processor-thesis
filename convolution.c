@@ -14,10 +14,11 @@ int main(void)
     printf("Convolution");
     char *img_8x8[8][8];   // 8x8 Image - Grayscale
     int array[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    char *kernel = NULL;
 
-    convolution(array, array);
-    convolution_2d(array, array);
-    print_array(array, SIZE(a));
+    convolution(img_8x8, kernel);
+    convolution_2d(img_8x8, kernel);
+    print_array(array, SIZE(array));
 
     return 0;
 }
