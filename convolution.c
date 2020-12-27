@@ -11,7 +11,7 @@ void convolution_2d(char *img_ptr, char *kernel);
 int main(void)
 {
     printf("Convolution");
-    char *img_8x8[8][8];   // 8x8 Image
+    char *img_8x8[8][8];   // 8x8 Image - Grayscale
     
     return 0;
 }
