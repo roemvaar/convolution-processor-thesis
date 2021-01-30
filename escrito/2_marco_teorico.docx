@@ -1,15 +1,37 @@
 ﻿Marco Teorico
 
 
-Convolucion
+Convolucion - http://www.songho.ca/dsp/convolution/convolution.html
+
+La convolucion es uno de los conceptos mas fundamentales e importantes en el area de procesamiento de senales. Usando la convolucion, se puede determinar la salida de un sistema para una senal de entrada arbitraria, si conocemos la respuesta al impulso del sistema.
+
+La definicion matematica de la convolucion discreate en el dominio del tiempo.
+
+
+
+
+
+
+
+
+
+
+Hablar de:
+
+- Aplicaciones de la convolucion – procesamiento de imagenes (filtros)
+- Convolucion 2D
+
 
 
 Verilog
 
+Verilog es un lenguaje de descripcion de hardware (HDL) usado para describir sistemas electronicos digitales. El sistema soporta el dise;o, prueba e implementacion de circuitos analogicos, digitale y de se;al mixta.
 
 Ley de Moore
 
 FPGA
 
-
-
+Field Programmable Gate Array.
+Hablar de:
+- Ventajas (bajo consumo de potencia)
+- Se puede construir un IC a partir de un desarrollo hecho para un FPGA.
