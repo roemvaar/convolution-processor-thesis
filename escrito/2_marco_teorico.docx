@@ -9,6 +9,12 @@ La definicion matematica de la convolucion discreate en el dominio del tiempo.
 
 
 
+Los coprocesadores son microprocesadores que acompañan al microcontroladores principal y están encargados de quitar cpu load al procesador principal, esto con el fin de dejar que el procesador principal pueda tener disponibilidad para resolver otras instrucciones y disminuir el consumo de potencia del sistema en general.
+
+
+
+
+
 
 
 
@@ -35,3 +41,78 @@ Field Programmable Gate Array.
 Hablar de:
 - Ventajas (bajo consumo de potencia)
 - Se puede construir un IC a partir de un desarrollo hecho para un FPGA.
+
+
+
+    1. Diseño digital mediante lenguajes de descripción de hardware
+El diseño digital moderno, utiliza lenguajes de descripción de hardware (HDLs) como principal herramienta para desarrollar nuevos circuitos integrados. En la industria, los dos lenguajes de descripción de hardware más utilizados son Verilog y VHDL. En este proyecto se decidió utilizar Verilog. 
+
+Las ventajas de Verilog son 
+
+Las desventajas de verilog son
+
+    2. Metodologías de diseño
+
+Método buttom-up
+
+Método up-down
+
+    3. FPGA
+Un FPGA (Field Programmable Gate Array) es un dispositivo electrónico reconfigurable a través de un lenguaje de descripción de hardware. Una de las ventajas que ofrecen este tipo de circuitos integrados es su capacidad para ser reconfigurado una vez que se ha hecho el deploy del aparato electrónico que tiene. 
+
+    4. Convolución 
+
+La convolución es una operación matemática (como la suma o la resta) la cual transforma dos señales f y g para producir una tercer señal. La convolución se denota con el operador * (no confundir con el operador de la multiplicación) Formalmente la convolución se describe con la siguiente ecuación
+
+
+Para las señales discretas se puede utilizar la siguiente ecuación 
+
+
+La convolución se caracteriza por realizar las mismas operaciones una y otra vez, primero multiplica el elemento n de la función f (f[n]) con el elemento m-n de la función g ([m-n]), y después acumula el producto de esta operación mediante una suma que va desde 0 hasta n+m-1.
+
+
+
+
+
+
+
+
+
+http://wavelab.uwaterloo.ca/sharedata/ME597/ME597_Lecture_Slides/ME597-4-Measurement.pdf
+
+Aplicaciones de la convolución
+
+    • Correlación
+    • Pattern matching
+    • Filtering 
+    • Polynomial evaluation 
+
+    • Many image processing tasks (in self-driving cars - feature identification)
+
+    1. Convolucionador
+
+Un convolucionador es un microprocesador que puede ser utilizado como coprocesador para un sistema embebido en el área de telecomunicaciones, visión computacional, procesamiento de imágenes.
+
+La convolución es utilizada en ingeniería electrónica para encontrar la respuesta al impulso de un sistema. Esto nos ayuda para poder describir el comportamiento de una planta, lo cual nos servirá para poder controlar este sistema.
+
+In electrical engineering, the convolution of one function (the input signal) with a second function (the impulse response) gives the output of a linear time-invariant system (LTI). At any given moment, the output is an accumulated effect of all the prior values of the input function, with the most recent values typically having the most influence (expressed as a multiplicative factor). The impulse response function provides that factor as a function of the elapsed time since each input value occurred
+
+    2. Algoritmos para resolver la convolución
+
+    3. Systolic Arrays https://medium.com/@CPLu/should-we-all-embrace-systolic-array-df3830f193dc
+
+Un Systolic Array es una arquitectura de computadora la cual forma una red homogénea, es decir, que está hecha de muchos elementos pequeños que son iguales entre sí, y al unirse tienen la capacidad para resolver alguna ecuación.
+
+La arquitectura básica es un arreglo de nxn de procesadores (PE - Processing Elements) conectados de manera mesh. Cada procesador se puede comunicar con sus cuatro vecinos adyacentes, pero no existe una comunicación global. Inclusive el control se hace de manera local. Los PE corren el mismo set de instrucciones de manera síncrona (al mismo tiempo) de forma paralela.
+
+Los systolic arrays son una opción óptima para resolver la convolución dado la naturaleza de esta operación matemática de estar compuesta de multiplicaciones y de acumulaciones.
+
+In parallel computer architectures, a systolic array is a homogeneous network of tightly coupled data processing units (DPUs) called cells or nodes.
+
+Los Systolic Arrays no son un exclusivos para resolver la convolución. También se utilizan para multiplicación de matrices, solucionar ecuaciones lineales, procesamiento de imagen, computer graphics, etc.
+
+Esta arquitectura ha sido adoptada en la industria, y ya hay algunos productos en la industria que utilizan esta arquitectura. Google en su TPU (Tensor Processing Unit) AI domain specific hardware, utiliza la arquitectura de Systolic Arrays para acelerar el procesamiento computacional de las redes neuronales. Estas TPU están construidas alrededor de la multiplicación de matrices, que es la operación principal en Deep Learning.
+
+Multiplicación de matrices
+
+La multiplicación de matrices comprende muchas operaciones MAC multiply accumulate.
