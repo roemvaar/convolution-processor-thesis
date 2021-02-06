@@ -1,0 +1,8 @@
+Links 
+
+- https://en.wikipedia.org/wiki/Systolic_array
+- https://www.inf.hs-flensburg.de/lang/papers/isa/index.htm
+- https://medium.com/@CPLu/should-we-all-embrace-systolic-array-df3830f193dc
+- https://users.dimi.uniud.it/~antonio.dangelo/MMS/materials/Guide_to_Digital_Signal_Process.pdf?fbclid=IwAR1HiNubuXu7u6jEYqmbBYO479VOtj_qkBRU4cqz1sEuB1Cn4TgwsvvusBs
+- https://www.youtube.com/playlist?list=PLtccLQBfc0_yQmpkdq2F-Cn2Sonq526Wg
+
