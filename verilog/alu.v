@@ -7,11 +7,11 @@ module alu(clk, in_a, in_b, in_op, out_data);
 	input clk;
 	input [7:0] in_a;
 	input [7:0] in_b;
-    input [2:0] in_op;
+    	input [2:0] in_op;
 	output [7:0] data_out;
-    wire [7:0] reg1;
-    wire [7:0] reg2;
-    reg [7:0] reg3;
+    	wire [7:0] reg1;
+    	wire [7:0] reg2;
+    	reg [7:0] reg3;
 
     // Assign in_a and in_b to internal variables for doing operations
     assign reg1 = in_a;
