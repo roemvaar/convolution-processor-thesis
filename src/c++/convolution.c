@@ -6,8 +6,8 @@
 #define SIZE(A) (sizeof(A)/sizeof(A[0]))
 
 
-void convolution(int *h, int *x, int len_h, int len_x, int *h);
-void convolution_2d(char *img_ptr, char *kernel);
+void conv_1d(int *h, int *x, int len_h, int len_x, int *y);
+void conv_2d(char *img_ptr, char *kernel);
 void print_array(int *array, int size);
 
 
@@ -17,41 +17,45 @@ int main(void)
 
     int x[20] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
     int h[5] = {100, 99, 98, 97, 96};
-    int len_y = SIZE(h) + SIZE(x) - 1;
-    int y[len_y] = 0;
+    int y[24] = {0};    // Important to initialize, since y is used as an accumulator
 
-    convolution(h, x, SIZE(h), SIZE(x), y);
-    
-    printf("y[n] = x[n] * h[n]");
-    print_array(y, len_y);
+
+    conv_1d(h, x, SIZE(h), SIZE(x), y);
+   
+    printf("y[n] = x[n] * h[n]:\n");
+    print_array(y, SIZE(y));
 
     return 0;
 }
 
 
 
-void convolution(int *h, int *x, int len_h, int len_x, int *h)
+void conv_1d(int *h, int *x, int len_h, int len_x, int *y)
 { 
-    // 1D Convolution operation - Input Side Algorithm 
+    // 1D Convolution operation - Input Side Algorithm
+    // x[n] is convolved with h[n] to produce y[n]
+    // This algorithm is based on the fundamental concept of DSP:
+    // decompose the input, pass the components through the system,
+    // and synthesize the output.
 
     printf("1D Convolution - Input Side Algorithm\n");
     
-    int i,j;
-    int len_conv = len_x + len_h - 1;
-    
+    int i;
+    int j;
+       
     // Loops through the input signal
     for(i = 0; i < len_x; i++)
     {
-        for(j = 0; j < len_x; i++)
+        for(j = 0; j < len_h; j++)
         {
-            y[i + j - i] = y[i + j - 1] + x[i] * h [j];     // MAC - Multiplier accumulator in verilog
+            y[i + j] = y[i + j] + x[i] * h [j];     // MAC - Multiplier accumulator in verilog
         }
     }  
 
 }
 
 
-void convolution_2d(char *img_ptr, char *kernel)
+void conv_2d(char *img_ptr, char *kernel)
 {
     printf("2D Convolution\n");
 }
@@ -63,7 +67,9 @@ void print_array(int *array, int size)
 
     for(i = 0; i < size; i++)
     {
-        printf("%d\n", array[i]);
+        printf("%d ", array[i]);
     }
+
+    printf("\n");
 }
 

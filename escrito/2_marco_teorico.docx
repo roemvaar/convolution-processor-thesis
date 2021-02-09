@@ -1,66 +1,9 @@
 ﻿Marco Teorico
 
-
-Convolucion - http://www.songho.ca/dsp/convolution/convolution.html
-
-La convolucion es uno de los conceptos mas fundamentales e importantes en el area de procesamiento de senales. Usando la convolucion, se puede determinar la salida de un sistema para una senal de entrada arbitraria, si conocemos la respuesta al impulso del sistema.
-
-La definicion matematica de la convolucion discreate en el dominio del tiempo.
+Convolucion
 
 
-
-Los coprocesadores son microprocesadores que acompañan al microcontroladores principal y están encargados de quitar cpu load al procesador principal, esto con el fin de dejar que el procesador principal pueda tener disponibilidad para resolver otras instrucciones y disminuir el consumo de potencia del sistema en general.
-
-
-
-
-
-
-
-
-
-
-
-
-Hablar de:
-
-- Aplicaciones de la convolucion – procesamiento de imagenes (filtros)
-- Convolucion 2D
-
-
-
-Verilog
-
-Verilog es un lenguaje de descripcion de hardware (HDL) usado para describir sistemas electronicos digitales. El sistema soporta el dise;o, prueba e implementacion de circuitos analogicos, digitale y de se;al mixta.
-
-Ley de Moore
-
-FPGA
-
-Field Programmable Gate Array.
-Hablar de:
-- Ventajas (bajo consumo de potencia)
-- Se puede construir un IC a partir de un desarrollo hecho para un FPGA.
-
-
-
-    1. Diseño digital mediante lenguajes de descripción de hardware
-El diseño digital moderno, utiliza lenguajes de descripción de hardware (HDLs) como principal herramienta para desarrollar nuevos circuitos integrados. En la industria, los dos lenguajes de descripción de hardware más utilizados son Verilog y VHDL. En este proyecto se decidió utilizar Verilog. 
-
-Las ventajas de Verilog son 
-
-Las desventajas de verilog son
-
-    2. Metodologías de diseño
-
-Método buttom-up
-
-Método up-down
-
-    3. FPGA
-Un FPGA (Field Programmable Gate Array) es un dispositivo electrónico reconfigurable a través de un lenguaje de descripción de hardware. Una de las ventajas que ofrecen este tipo de circuitos integrados es su capacidad para ser reconfigurado una vez que se ha hecho el deploy del aparato electrónico que tiene. 
-
-    4. Convolución 
+http://www.songho.ca/dsp/convolution/convolution.html
 
 La convolución es una operación matemática (como la suma o la resta) la cual transforma dos señales f y g para producir una tercer señal. La convolución se denota con el operador * (no confundir con el operador de la multiplicación) Formalmente la convolución se describe con la siguiente ecuación
 
@@ -70,17 +13,24 @@ Para las señales discretas se puede utilizar la siguiente ecuación 
 
 La convolución se caracteriza por realizar las mismas operaciones una y otra vez, primero multiplica el elemento n de la función f (f[n]) con el elemento m-n de la función g ([m-n]), y después acumula el producto de esta operación mediante una suma que va desde 0 hasta n+m-1.
 
+La convolucion es uno de los conceptos mas fundamentales e importantes en el area de procesamiento de senales. Usando la convolucion, se puede determinar la salida de un sistema para una senal de entrada arbitraria, si conocemos la respuesta al impulso del sistema.
 
+La definicion matematica de la convolucion discreate en el dominio del tiempo.
 
+- Aplicaciones de la convolucion – procesamiento de imagenes (filtros)
+- Convolucion 2D
 
+Propiedades de la convolucion 
 
+Identity - delta[n] * x[n] = x[n]
 
+Commutative – x[n] * h[n] = h[n] * x[n]
 
-
-
-http://wavelab.uwaterloo.ca/sharedata/ME597/ME597_Lecture_Slides/ME597-4-Measurement.pdf
+Notacion: En procesamiento de se;ales, el asterisko * es utilizado para denotar la operacion de la convolucion, es importante no confundir con la operacion de la multiplicacion aritmetica.
 
 Aplicaciones de la convolución
+
+http://wavelab.uwaterloo.ca/sharedata/ME597/ME597_Lecture_Slides/ME597-4-Measurement.pdf
 
     • Correlación
     • Pattern matching
@@ -89,17 +39,19 @@ Aplicaciones de la convolución
 
     • Many image processing tasks (in self-driving cars - feature identification)
 
-    1. Convolucionador
 
-Un convolucionador es un microprocesador que puede ser utilizado como coprocesador para un sistema embebido en el área de telecomunicaciones, visión computacional, procesamiento de imágenes.
 
-La convolución es utilizada en ingeniería electrónica para encontrar la respuesta al impulso de un sistema. Esto nos ayuda para poder describir el comportamiento de una planta, lo cual nos servirá para poder controlar este sistema.
+Algoritmos para resolver la convolución
 
-In electrical engineering, the convolution of one function (the input signal) with a second function (the impulse response) gives the output of a linear time-invariant system (LTI). At any given moment, the output is an accumulated effect of all the prior values of the input function, with the most recent values typically having the most influence (expressed as a multiplicative factor). The impulse response function provides that factor as a function of the elapsed time since each input value occurred
+- ISA
+- OSA
+- Systolic Arrays
 
-    2. Algoritmos para resolver la convolución
+En este proyecto se van a utilizar systolic arrays por… 
 
-    3. Systolic Arrays https://medium.com/@CPLu/should-we-all-embrace-systolic-array-df3830f193dc
+Systolic Arrays 
+
+https://medium.com/@CPLu/should-we-all-embrace-systolic-array-df3830f193dc
 
 Un Systolic Array es una arquitectura de computadora la cual forma una red homogénea, es decir, que está hecha de muchos elementos pequeños que son iguales entre sí, y al unirse tienen la capacidad para resolver alguna ecuación.
 
@@ -116,3 +68,52 @@ Esta arquitectura ha sido adoptada en la industria, y ya hay algunos productos e
 Multiplicación de matrices
 
 La multiplicación de matrices comprende muchas operaciones MAC multiply accumulate.
+
+
+
+Convolucionador
+
+Un convolucionador es un microprocesador que puede ser utilizado como coprocesador para un sistema embebido en el área de telecomunicaciones, visión computacional, procesamiento de imágenes.
+
+La convolución es utilizada en ingeniería electrónica para encontrar la respuesta al impulso de un sistema. Esto nos ayuda para poder describir el comportamiento de una planta, lo cual nos servirá para poder controlar este sistema.
+
+In electrical engineering, the convolution of one function (the input signal) with a second function (the impulse response) gives the output of a linear time-invariant system (LTI). At any given moment, the output is an accumulated effect of all the prior values of the input function, with the most recent values typically having the most influence (expressed as a multiplicative factor). The impulse response function provides that factor as a function of the elapsed time since each input value occurred
+
+
+
+
+Ley de Moore
+
+Diseño digital
+
+Diseño digital mediante lenguajes de descripción de hardware
+
+El diseño digital moderno, utiliza lenguajes de descripción de hardware (HDLs) como principal herramienta para desarrollar nuevos circuitos integrados. En la industria, los dos lenguajes de descripción de hardware más utilizados son Verilog y VHDL. En este proyecto se decidió utilizar Verilog. 
+
+Metodologías de diseño
+
+Método buttom-up
+
+Método up-down
+
+Verilog
+
+Verilog es un lenguaje de descripcion de hardware (HDL) usado para describir sistemas electronicos digitales. El sistema soporta el dise;o, prueba e implementacion de circuitos analogicos, digitale y de se;al mixta.
+
+Las ventajas de Verilog son 
+
+Las desventajas de verilog son
+
+
+Coprocesadores
+Los coprocesadores son microprocesadores que acompañan al microcontroladores principal y están encargados de quitar cpu load al procesador principal, esto con el fin de dejar que el procesador principal pueda tener disponibilidad para resolver otras instrucciones y disminuir el consumo de potencia del sistema en general.
+
+
+FPGA
+
+Field Programmable Gate Array.
+Hablar de:
+- Ventajas (bajo consumo de potencia)
+- Se puede construir un IC a partir de un desarrollo hecho para un FPGA.
+
+Un FPGA (Field Programmable Gate Array) es un dispositivo electrónico reconfigurable a través de un lenguaje de descripción de hardware. Una de las ventajas que ofrecen este tipo de circuitos integrados es su capacidad para ser reconfigurado una vez que se ha hecho el deploy del aparato electrónico que tiene. 
