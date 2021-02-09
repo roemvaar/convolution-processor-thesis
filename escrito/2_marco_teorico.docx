@@ -1,6 +1,6 @@
 ﻿Marco Teorico
 
-Convolucion
+Convolución 
 
 
 http://www.songho.ca/dsp/convolution/convolution.html
@@ -8,7 +8,12 @@ http://www.songho.ca/dsp/convolution/convolution.html
 La convolución es una operación matemática (como la suma o la resta) la cual transforma dos señales f y g para producir una tercer señal. La convolución se denota con el operador * (no confundir con el operador de la multiplicación) Formalmente la convolución se describe con la siguiente ecuación
 
 
+
+
 Para las señales discretas se puede utilizar la siguiente ecuación 
+
+
+
 
 
 La convolución se caracteriza por realizar las mismas operaciones una y otra vez, primero multiplica el elemento n de la función f (f[n]) con el elemento m-n de la función g ([m-n]), y después acumula el producto de esta operación mediante una suma que va desde 0 hasta n+m-1.
@@ -18,7 +23,15 @@ La convolucion es uno de los conceptos mas fundamentales e importantes en el are
 La definicion matematica de la convolucion discreate en el dominio del tiempo.
 
 - Aplicaciones de la convolucion – procesamiento de imagenes (filtros)
+
+
+
 - Convolucion 2D
+
+
+
+
+
 
 Propiedades de la convolucion 
 
@@ -36,7 +49,6 @@ http://wavelab.uwaterloo.ca/sharedata/ME597/ME597_Lecture_Slides/ME597-4-Measure
     • Pattern matching
     • Filtering 
     • Polynomial evaluation 
-
     • Many image processing tasks (in self-driving cars - feature identification)
 
 
@@ -46,6 +58,54 @@ Algoritmos para resolver la convolución
 - ISA
 - OSA
 - Systolic Arrays
+
+Why Systolic Architectures - H.T. Kung
+
+Systolic architectures, which permit multiple computations for each memory access, can speed execution of compute-bound problems without increasing I/O requirements.
+
+High-performance, special-purpose computer systems are typically used to meet specific application requirements or to off-load computations that are specially taxing to general-purpose computers. Drawback: They are complex and not general
+
+Systolic architecture: A general methodology for mapping high-level computations, e.g. convolution, into hardware structures.
+
+In a systolic system, data flows from the computer memory in a rhythmic fashion, passing through many processing elements before it returns to memory, much as blood circulates to and from the heart. This is where the name systolic comes from.
+
+ Systolic arrays can be linear or two dimensional.
+
+Benefit: A systolic system is easy to implement because of its regularity and easy to reconfigure because of its modularity.
+
+IMPORTANT - The cycle for developing a special-purpose system (hardware) can be divided into three phases:
+    1. Task definition
+    2. Design
+    3. Implementation
+
+Systolic architectures: the basic principle
+
+Personal understanding: Perform more operations on data per memory fetch.
+
+A systolic system consists of a set of interconnected cells, each capable of performing some simple operation. Cells in a systolic system are interconnected to form a systolic array. Information, i.e. data, in a systolic system flows between cells in a pipelined fashion, and communication with the outside world occurs only at the “boundary cells”.
+
+Computational tasks can be conceptually classified into two families - compute-bound computations and I/O-bound computations. TODO: Understand this - https://stackoverflow.com/questions/868568/what-do-the-terms-cpu-bound-and-i-o-bound-mean
+Compute-bound - A program is CPU bound if it would go faster if the CPU were faster.
+I/O-bound - A program is I/O bound if it would go faster if the I/O subsystem was faster.
+
+Speeding up a compute-bound computation (CPU-bound), may often be accomplished in a relatively simple and inexpensive manner, that is, by the systolic approach.
+
+
+By replacing a single processing element with an array of PEs, i.e. cells, a higher computation throughput can be achieved without increasing memory bandwidth.
+
+Advantages of systolic systems:
+    • Being able to use each input data item a number of times - achieving high computation throughput
+    • Modular expensibility TODO: Understand this term
+    • Simple and regular data and control flows
+    • Use of simple and uniform cells
+    • Elimination of global broadcasting
+    • Fan-in and fast response time
+
+A family of systolic designs for the convolution computation
+
+Systolic designs for the convolution problem: 
+
+
 
 En este proyecto se van a utilizar systolic arrays por… 
 
@@ -84,7 +144,7 @@ In electrical engineering, the convolution of one function (the input signal) wi
 
 Ley de Moore
 
-Diseño digital
+
 
 Diseño digital mediante lenguajes de descripción de hardware
 
