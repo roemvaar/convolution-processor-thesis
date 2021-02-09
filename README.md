@@ -1,3 +1,4 @@
-# “Design of a co-processor for the convolution operation with Verilog”
+# Diseño de un procesador para resolver la operación de la convolución mediante el método de Systolic Arrays
 
-This repo contains the code that corresponds to my Bachelor's thesis - “Design of a co-processor for the convolution operation with Verilog in FPGA”
+Contiene el código y la documentación correspondiente a mi tesis de la licenciatura
+

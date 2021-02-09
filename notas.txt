@@ -1,0 +1,14 @@
+Cosas por hacer:
+ 
+[] HLA - crear diagrama de la High Level Architecture con cada block de hardware necesario
+[] Verilog - a partir de la HLA crear los files de verilog que se necesitan, source y test benches
+[] Verilog - diseñar el PE (processing element) para mi arquitectura
+[] Diseñar programa que va a correr la ALU
+    1) Loading operation - Fetch weights from storage and allocate them in each cell
+    2) After the loading operation the convolver goes into a waiting state
+    3) The convolution calculation starts on the arrival of a "go"command by the program.
+    3) Starts the systolic program - data is moved from the Video Memory into the systolic
+       array, i.e. Processing Elements in a systolic fashion. Partial outputs are stored in
+       V.M
+    4) After all operations are done, results from V.M are stored inside storage
+
