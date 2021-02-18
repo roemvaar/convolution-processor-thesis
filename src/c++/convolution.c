@@ -55,7 +55,7 @@ void conv_1d(int *h, int *x, int len_h, int len_x, int *y)
 }
 
 
-void conv_2d(char *img_ptr, char *kernel)
+void conv_2d(int **h, int **x, int **y)
 {
     printf("2D Convolution\n");
 }
