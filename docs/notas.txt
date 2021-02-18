@@ -6,3 +6,13 @@ Links
 - https://users.dimi.uniud.it/~antonio.dangelo/MMS/materials/Guide_to_Digital_Signal_Process.pdf?fbclid=IwAR1HiNubuXu7u6jEYqmbBYO479VOtj_qkBRU4cqz1sEuB1Cn4TgwsvvusBs
 - https://www.youtube.com/playlist?list=PLtccLQBfc0_yQmpkdq2F-Cn2Sonq526Wg
 
+En cao de necesitar implementar en un FPGA - checar estas notas
+
+\subsection{Implementación a nivel de hardware}
+En esta etapa se programa el FPGA. Además, se realizan pruebas a la arquitectura propuesta para comprobar que se cumplen los requerimientos planteados al inicio del proyecto y para verificar que la operación de la convolución se realiza de manera correcta. 
+
+\subsubsection{Implementación en FPGA}
+Una vez que se cuenta con la arquitectura sintetizada, se programa el archivo de flujo de bits en el FPGA utilizando el software Digilent Adept. Este archivo le indica al FPGA cómo se tiene que configurar para realizar la operación de la convolución.
+
+Pruebas
+Se realizan pruebas al hardware mediante una interfaz de comunicación serial la cual conecta al FPGA con una PC. Se envian dos señales al FPGA, las cuales se convolucionan en la arquitectura digital, y este da como resultado una tercera señal la cual se envía a la PC. El resultado se compara con resultados obtenidos bajo un ambiente conocido en MATLAB y sirve para comprobar que el sistema digital está funcionando de manera correcta. Además, se realizan pruebas de velocidad de procesamiento y consumo de potencia para comparar con diferentes arquitecturas.
