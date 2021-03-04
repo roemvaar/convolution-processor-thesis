@@ -32,7 +32,7 @@ module alu(clk, in_a, in_b, in_op, out_data);
             5 : reg3 = reg1 & reg2;     // AND gate
             6 : reg3 = reg1 | reg2;     // OR gate
             7 : reg3 = reg1 ^ reg2;     // XOR gate
-            default : reg4 = 0;
+            default : reg3 = 0;
         endcase	
 	end
 
