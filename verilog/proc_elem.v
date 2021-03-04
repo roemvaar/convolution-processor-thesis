@@ -10,6 +10,7 @@ module proc_elem(clk, x_in, y_in, x_out, y_out, weight);
     input clk;
     input x_in;
     input y_in;
+    input weight;
     output x_out;
     output y_out;
 
