@@ -6,5 +6,11 @@
 // filter2D() function is used for validation
 // https://stackoverflow.com/questions/58774408/convolution-implementation-in-c
 
+#include <stdio.h>
+#include "conv2d.h"
 
-using namespace std;
+
+void conv2d()
+{ 
+  
+}
